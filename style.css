@@ -1,0 +1,243 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: hsl(30, 54%, 90%);
+  color: hsl(30, 10%, 34%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  min-height: 100vh;
+  font-weight: 500;
+}
+
+h3, li, p {
+  font-family: 'Outfit', sans-serif;
+}
+
+h1, h2 {
+  font-family: 'Young Serif', serif;
+}
+
+.container {
+  background: hsl(0, 0%, 100%);
+  max-width: 600px;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+}
+
+.content-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.content-card img {
+  border-radius: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.content-card h1 {
+  margin-bottom: 0.8rem;
+  font-weight: 500;
+  color: #333;
+}
+
+.content-card p {
+  font-size: 13px;
+  line-height: 1.4;
+  margin-bottom: 1.5rem;
+}
+
+.content-card div.prep-time {
+  background: hsl(330, 100%, 98%);
+  width: 100%;
+  height: 100%;
+  padding: 1rem 0 1rem 1.5rem;
+  border-radius: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.content-card div.prep-time h3 {
+  color: hsl(332, 51%, 32%);
+  font-size: 15px;
+}
+
+.content-card div.prep-time ul {
+  padding: 0.5rem 1rem 0 1.5rem;
+  line-height: 1.7;
+}
+
+.content-card div.prep-time ul li span,
+.content-card div.instructions ol li span {
+  padding-left: 0.7rem;
+  color: hsl(30, 10%, 34%);
+  font-weight: 700;
+}
+
+.content-card div.ingredients,
+.content-card div.instructions {
+  border-bottom: 1px solid hsl(30, 18%, 87%);
+  margin-bottom: 1.5rem;
+}
+
+.content-card div.ingredients h2,
+.content-card div.instructions h2,
+.content-card div.nutritions h2 {
+  color: hsl(14, 45%, 36%);
+  font-weight: 500;
+}
+
+.content-card div.ingredients ul {
+  padding: 1rem 0 1.5rem 1.5rem;
+  line-height: 2;
+}
+
+.content-card div.ingredients ul li span {
+  padding-left: 1rem;
+}
+
+.content-card div.instructions ol {
+  padding: 1rem 0 1.2rem 1.5rem;
+  line-height: 1.5;
+  font-size: 13.5px;
+  list-style: none;
+  list-style-position: inside;
+  counter-reset: item;
+}
+
+.content-card div.instructions ol li {
+  padding-bottom: 0.5rem;
+  text-indent: -0.7rem;
+  padding-left: 1.5rem;
+  position: relative;
+  counter-increment: item;
+}
+
+.content-card div.instructions ol li::before {
+  content: counter(item) ".";
+  position: absolute;
+  left: 0;
+  color: hsl(14, 45%, 36%);
+  font-weight: bold;
+}
+
+.content-card div.nutritions p {
+  margin-top: 1rem;
+}
+
+.content-card div.nutritions ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  border-bottom:1px solid hsl(30, 18%, 87%);
+}
+
+.content-card div.nutritions ul:last-child {
+  border: none;
+}
+
+.content-card div.nutritions ul li {
+  padding: 0.8rem;
+}
+
+.content-card div.nutritions ul li.amount {
+  margin-right: 14.5rem;
+  color: hsl(14, 45%, 36%);
+  font-weight: 600;
+}
+
+.content-card div.nutritions ul li.nutri {
+  margin-left: 1.2rem;
+}
+
+.content-card div.nutritions ul li.amount-3, 
+.content-card div.nutritions ul li.amount-4 {
+  margin-right: 16rem;
+}
+
+.content-card div.nutritions ul li.amount-2 {
+  margin-right: 16.6rem;
+}
+
+@media(min-width: 320px) and (max-width: 600px) {
+  .content-card div.nutritions ul li.amount-3, 
+  .content-card div.nutritions ul li.amount-4 {
+    margin-right: 3rem;
+  }
+
+  .content-card div.nutritions ul li.amount-2 {
+    margin-right: 3.5rem;
+  }
+
+  .content-card div.nutritions ul li.amount-1 {
+    margin-right: 1.5rem;
+  }
+
+  .content-card div.ingredients ul li:last-child {
+    text-indent: -1rem;
+    padding-left: 1rem;
+    line-height: 1.7;
+    margin-top: 0.3rem;
+  }
+
+  .content-card div.prep-time ul li:first-child {
+    text-indent: -0.7rem;
+    padding-left: 0.7rem;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.attribution { 
+  font-size: 11px; text-align: center; 
+}
+
+.attribution a { 
+  color: hsl(228, 45%, 44%); 
+}
